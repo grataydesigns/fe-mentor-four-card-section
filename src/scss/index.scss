@@ -1,0 +1,111 @@
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-primary-red: hsl(0, 78%, 62%);
+  --color-primary-cyan: hsl(180, 62%, 55%);
+  --color-primary-orange: hsl(34, 97%, 64%);
+  --color-primary-blue: hsl(212, 86%, 64%);
+  --color-neutral-dark-blue: hsl(234, 12%, 34%);
+  --color-neutral-gray-blue: hsl(229, 6%, 66%);
+  --color-neutral-light-gray: hsl(0, 0%, 98%);
+  --font-weight-light: 200;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+  --space-xxs: 0.5rem;
+  --space-xs: 1rem;
+  --space-sm: 1.5rem;
+  --space-md: 2rem;
+  --space-lg: 3rem;
+  --space-xl: 4rem;
+  --space-xxl: 5rem;
+  --border-color: transparent;
+}
+
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: var(--space-md) 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 90rem;
+  padding: 0 1rem;
+}
+
+.grid-container {
+  @media (min-width: 48rem) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+  }
+
+  @media (min-width: 62rem) {
+    gap: var(--space-lg);
+  }
+
+  @media (min-width: 75rem) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    article {
+      &:first-child,
+      &:last-child {
+        grid-row: 1 / 3;
+        align-self: center;
+      }
+
+      &:nth-child(3) {
+        grid-column: 2;
+        grid-row: 2;
+      }
+    }
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-xxl);
+}
+
+.header__title {
+  font-size: 4.236rem;
+  font-weight: var(--font-weight-light);
+  line-height: 1.25;
+  margin: 0;
+  margin-bottom: var(--space-md);
+
+  span {
+    display: block;
+    font-size: 2.618rem;
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+.header__subtitle {
+  color: var(--color-neutral-gray-blue);
+  font-size: 1.618rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+.theme-red {
+  --border-color: var(--color-primary-red);
+}
+
+.theme-blue {
+  --border-color: var(--color-primary-blue);
+}
+
+.theme-cyan {
+  border-color: var(--color-primary-cyan);
+}
+
+.theme-orange {
+  border-color: var(--color-primary-orange);
+}
