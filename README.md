@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution on FE Mentor](https://www.frontendmentor.io/solutions/responsive-card-layout-using-css-grid-custom-properties-and-gatsbyjs-gsPh2DuWV)
+- Live Site URL: [Four Card Section](https://fementorfourcardsectionmain.gatsbyjs.io/)
 
 ## My process
 
@@ -49,6 +49,8 @@ I learned that Gatsby is an easy framework to use to quickly create prototypes. 
 ### Continued development
 
 I think to speed up my prototype setup using Gatsby, I will explore creating a Gatsby theme I can use for future projects. The theme will include commonly used components like Seo, Layout, react hooks, and baseline styles.
+
+This is my first Frontend Mentor solution and some things I was not aware of as I worked on the free challenge without the design source files are: it generates a report on your solution, which identifies accessibility and HTML issues to improve upon; and you get a visual of how close you were to the original design. As I work on my challenges I will work to improve upon those aspects of my solution.
 
 ### Useful resources
 
